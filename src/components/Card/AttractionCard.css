@@ -1,0 +1,35 @@
+/* General styles for all screen sizes */
+.attraction-card {
+    background-color: rgba(135, 116, 160, 0.9);
+    padding: 1px; /* Further reduce padding for all screens */
+    border: 1px solid var(--violeta);
+    border-radius: 2px; /* Further reduce border radius for a more compact look */
+    margin-bottom: 1px; /* Reduce margin for all screens */
+  }
+  
+  .attraction-image {
+    width: 100%;
+    border-radius: 2px;
+    margin-bottom: 1px; /* Further reduce margin for a tighter layout */
+  }
+  
+  .attraction-details {
+    text-align: center;
+    font-size: 4px; /* Further reduce font size for a more compact look */
+    max-height: 10px; /* Set a smaller maximum height for the details section */
+    overflow: hidden; /* Hide overflow content */
+  }
+  
+  /* Styles for small screens (up to 500px) */
+  @media (max-width: 500px) {
+    .attraction-card {
+      padding: 1px; /* Further reduce padding for smaller screens */
+      margin-bottom: 1px; /* Further reduce margin for smaller screens */
+    }
+  
+    .attraction-details {
+      font-size: 3px; /* Further reduce font size for smaller screens */
+      max-height: 7px; /* Set a smaller maximum height for smaller screens */
+    }
+  }
+  

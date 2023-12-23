@@ -1,0 +1,89 @@
+.ContactColor {
+    background-color: rgba(135, 116, 160, 0.9);
+    max-width: 790px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid var(--violeta);
+    border-radius: 10px;
+}
+
+.contact-container {
+    border: 2px solid var(--blanco-transparente);
+    border-radius: 10px;
+}
+
+.tituloContact {
+    color: rgb(82, 13, 85);
+    align-self: center;
+    font-weight: 500;
+}
+
+.titulosecundario {
+    font-size: 20px;
+}
+
+textarea {
+    height: 150px;
+}
+
+.Message-form {
+    color: rgb(82, 13, 85);
+    padding: 0 px;
+    height: auto;
+}
+
+.boton-send {
+    box-sizing: border-box;
+}
+
+.boton-send input[type="submit"] {
+    background-color: var(--rosita);
+    color: var(--verde);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-send input[type="submit"]:hover {
+    background-color: var(--verde-claro);
+}
+
+/* Medium screens (up to 768px) */
+@media (max-width: 768px) {
+    .ContactColor {
+        padding: 20px;
+    }
+    .tituloContact {
+        font-size: 24px;
+    }
+    .formulario label,
+    .formulario input,
+    .formulario textarea,
+    .boton-send input[type="submit"] {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+}
+
+/* Small screens (up to 500px) */
+@media (max-width: 500px) {
+    .ContactColor {
+        width: fit-content;
+        height: auto;
+        padding-top: 40px; 
+        border-radius: 30px;
+
+    }
+    
+
+    .tituloContact {
+        font-size: 15px; /* Adjust the font size for small screens */
+    }
+
+    .formulario textarea {
+        height: 50px;
+    }
+}

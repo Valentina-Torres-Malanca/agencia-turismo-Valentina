@@ -1,0 +1,152 @@
+.CitiesColor {
+  background-color: rgba(135, 116, 160, 0.9);
+  max-width: 690px;
+
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--violeta);
+  border-radius: 10px;
+}
+
+
+.CitiesColor {
+  background-color: rgba(135, 116, 160, 0.9);
+  max-width: 790px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid var(--violeta);
+  border-radius: 10px;
+}
+
+.cities-container {
+  border: 2px solid var(--blanco-transparente);
+  border-radius: 10px;
+}
+
+.tituloCities {
+  color: rgb(82, 13, 85);
+  align-self: center;
+  font-weight: 500;
+}
+
+.colorBotonCiudad {
+  color: var(--bordo); 
+  background-color: var(--rosita); 
+  border-color: var(--bordo); 
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+
+
+
+.btn-city:hover {
+  background-color: var(--verde-claro);
+}
+
+.attractions-container {
+  margin-top: 20px;
+}
+
+.attractions-title {
+  color: rgb(82, 13, 85);
+  font-weight: 500;
+}
+
+.attraction-card {
+  background-color: rgba(135, 116, 160, 0.9);
+  padding: 20px;
+  border: 2px solid var(--violeta);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.attraction-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.attraction-name {
+  color: var(--rosita);
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.attraction-description {
+  color: rgb(82, 13, 85);
+}
+
+.attraction-price {
+  color: var(--violeta);
+  margin-top: 5px;
+  font-weight: 500;
+  
+}
+.arrow-icon {
+  margin-left: 10px; /* Ajusta el margen según sea necesario */
+  font-size: 1.5rem; /* Ajusta el tamaño del ícono según sea necesario */
+  cursor: pointer;
+  color: var(--rosita); /* Puedes ajustar el color según sea necesario */
+}
+
+.arrow-icon:hover {
+  color: var(--verde-claro); /* Color al pasar el mouse sobre el ícono */
+}
+
+@media (min-width: 501px) and (max-width: 759px) {
+  .CitiesColor {
+    max-width: 500px; /* Reduce el ancho máximo para pantallas medianas */
+    padding: 15px; /* Ajusta el padding en pantallas medianas */
+  }
+
+  .tituloCities {
+    font-size: 24px; /* Ajusta el tamaño de fuente para títulos en pantallas medianas */
+  }
+
+  .colorBotonCiudad {
+    padding: 10px 18px; /* Ajusta el padding para botones en pantallas medianas */
+  }
+
+  .attraction-card {
+    padding: 15px; /* Ajusta el padding para tarjetas de atracciones en pantallas medianas */
+    margin-bottom: 15px; /* Ajusta el margen inferior en pantallas medianas */
+  }
+}
+
+/* Pantallas pequeñas (hasta 500px) */
+@media (max-width: 500px) {
+  .CitiesColor {
+    max-width: 100%; /* Utiliza el ancho completo para pantallas pequeñas */
+    padding: 15px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .tituloCities {
+    font-size: 20px; /* Ajusta el tamaño de fuente para títulos en pantallas pequeñas */
+  }
+
+  .attractions-container {
+    margin-top: 10px; /* Ajusta el margen superior para pantallas pequeñas */
+  }
+
+  .colorBotonCiudad {
+    padding: 8px 16px; /* Reduce el padding para botones en pantallas pequeñas */
+  }
+
+  .attraction-card {
+    padding: 15px; /* Reduce el padding para tarjetas de atracciones en pantallas pequeñas */
+    margin-bottom: 15px; /* Reduce el margen inferior en pantallas pequeñas */
+  }
+
+  .hidden {
+    display: none;
+  }
+}

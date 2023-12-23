@@ -1,0 +1,76 @@
+.NavFondo {
+  padding-top: 20px; /* Reduce top padding for a better fit on smaller screens */
+  padding-bottom: 20px; /* Reduce bottom padding for a better fit on smaller screens */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.NavHome {
+  font-size: 20px; /* Reduce font size for a better fit on smaller screens */
+  padding: 8px; /* Adjust padding for a better fit on smaller screens */
+  border-radius: 6px; /* Adjust border-radius for a better fit on smaller screens */
+  background-color: var(--bordo);
+  color: var(--rosita);
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column; /* Adjust to column layout for smaller screens */
+  align-items: center;
+  margin-top: 10px; /* Add margin for better spacing on smaller screens */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; /* Adjust to column layout for smaller screens */
+  align-items: center;
+  width: 100%; /* Adjust to full width for smaller screens */
+  margin-top: 10px; /* Add margin for better spacing on smaller screens */
+}
+
+.nav-link {
+  font-size: 16px; /* Reduce font size for a better fit on smaller screens */
+  margin: 8px 0; /* Adjust margin for better spacing on smaller screens */
+}
+
+/* Ajustes para pantallas medianas (hasta 768px) */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-link {
+    margin: 0; /* Reset margin for medium screens */
+  }
+
+  .menu-container {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0; /* Reset margin for medium screens */
+  }
+}
+
+/* Ajustes para pantallas grandes (más de 768px) */
+@media (min-width: 768px) {
+  .menu-container {
+    justify-content: flex-end;
+    flex-grow: 1;
+    flex-direction: row; /* Reset to row layout for larger screens */
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0; /* Reset margin for larger screens */
+  }
+}
